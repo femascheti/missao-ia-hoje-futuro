@@ -48,8 +48,8 @@ function mostraResultado() {
 }
 
 function substituiNomePerguntas() {
-    for (const pergunta of perguntas) {
-        pergunta.pergunta = pergunta.pergunta.replace(/!!você/g, nome);
+    for (const nomeAleatorio of perguntas) {
+        nomeAleatorio.pergunta = nomeAleatorio.pergunta.replace(/!!você/g, nome);
     }
 }
 
