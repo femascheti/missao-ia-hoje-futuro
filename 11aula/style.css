@@ -1,0 +1,39 @@
+/* Definir váriaveis de escopo global dentro da pseudoclasse root */
+:root {
+  --cor-fundo: #01080E;
+  --cor-principal: #0B0D20;
+  --cor-secundaria: #212333;
+  --cor-destaque: #D7F9FF;
+  --cor-titulo: #2BDEFD;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-destaque);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;  /*viewport height, altura do viewport*/
+}
+
+.caixa-principal {
+  background-color: var(--cor-secundaria);
+  padding: 20px;
+  max-width: 600px;  /*largura*/
+}
+
+/*adicionar botões*/ 
+button {
+  background-color: var(--cor-principal);
+  color: var(--cor-destaque);
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--cor-destaque);
+  color: var(--cor-secundaria);
+}
